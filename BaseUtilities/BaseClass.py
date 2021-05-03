@@ -29,7 +29,8 @@ class BaseClass:
     def adddata_xpath(self, locator, value):
         return self.driver.find_element_by_xpath(locator).send_keys(value)
 
-    def getLogger(self):
+    @staticmethod
+    def getLogger():
 
         logger_name = inspect.stack()[1][3]
         log = logging.getLogger(logger_name)

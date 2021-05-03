@@ -3,8 +3,6 @@ import sys
 
 import pytest
 from selenium import webdriver
-from selenium.webdriver import ActionChains
-
 driver = None
 
 
